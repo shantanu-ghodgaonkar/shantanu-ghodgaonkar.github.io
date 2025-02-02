@@ -270,6 +270,37 @@
                 </td>
               </tr>
 
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src="images/f_matrix_pose.jpg" alt="F-Matrix and Relative Pose Estimation" width="100%">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a
+                    href="https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Robot%20Perception%20(ROB-GY%206203)/Homework/HW2/task3.py">
+                    <span class="papertitle">F-Matrix and Relative Pose Estimation for Stereo Vision</span>
+                  </a>
+                  <br>
+                  <em>Course Project</em>, 2024
+                  <br>
+                  <a
+                    href="https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Robot%20Perception%20(ROB-GY%206203)/Homework/HW2/task3.py">GitHub
+                    Repository</a>
+                  <p></p>
+                  <p>
+                    This project computes the <strong>Fundamental Matrix (F-Matrix)</strong> and estimates the
+                    <strong>relative pose (R, t)</strong> between two stereo images. Using <strong>Aruco
+                      markers</strong> for robust point correspondences, the method applies <strong>RANSAC</strong> to
+                    filter outliers and accurately estimate the F-Matrix. The computed epipolar constraints are
+                    visualized to validate stereo geometry. The project further derives the <strong>Essential
+                      Matrix</strong> and decomposes it to recover the <strong>rotation and translation</strong> between
+                    the camera views. Visual results include <strong>epipolar line overlays</strong> on images,
+                    providing insights into the quality of estimated parameters.
+                  </p>
+                </td>
+              </tr>
+
 
               <tr>
                 <td style="padding:16px;width:20%;vertical-align:middle">
@@ -298,6 +329,69 @@
                   </p>
                 </td>
               </tr>
+
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src="images/icp_point_cloud.jpg" alt="ICP-Based 3D Point Cloud Alignment" width="100%">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a
+                    href="https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Robot%20Perception%20(ROB-GY%206203)/Homework/HW2/task2b.py">
+                    <span class="papertitle">ICP-Based 3D Point Cloud Alignment Using Open3D</span>
+                  </a>
+                  <br>
+                  <em>Course Project</em>, Fall 2024
+                  <br>
+                  <a
+                    href="https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Robot%20Perception%20(ROB-GY%206203)/Homework/HW2/task2b.py">GitHub
+                    Repository</a>
+                  <p></p>
+                  <p>
+                    This project implements the <strong>Iterative Closest Point (ICP)</strong> algorithm to align 3D
+                    point clouds, a crucial step in <strong>point cloud registration</strong>. It aligns two datasets by
+                    iteratively refining transformation estimates based on correspondences. The project includes two
+                    parts: one focusing on Open3D's demo point clouds and another applying ICP to <strong>KITTI
+                      self-driving dataset</strong>. The methodology involves <strong>correspondence matching, centroid
+                      alignment, rotation estimation using Singular Value Decomposition (SVD), and error convergence
+                      analysis</strong>. The results compare the accuracy of alignment between different datasets,
+                    highlighting ICP’s strengths and limitations.
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src="images/ransac_plane_fitting.jpg" alt="RANSAC Plane Fitting" width="100%">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a
+                    href="https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Robot%20Perception%20(ROB-GY%206203)/Homework/HW2/task1.py">
+                    <span class="papertitle">RANSAC-Based 3D Plane Fitting for Point Cloud Data</span>
+                  </a>
+                  <br>
+                  <em>Course Project</em>, Fall 2024
+                  <br>
+                  <a
+                    href="https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Robot%20Perception%20(ROB-GY%206203)/Homework/HW2/task1.py">GitHub
+                    Repository</a>
+                  <p></p>
+                  <p>
+                    This project implements <strong>RANSAC (Random Sample Consensus)</strong> for fitting a plane to 3D
+                    point cloud data. The algorithm robustly estimates plane parameters while handling
+                    <strong>outliers</strong>, making it a valuable tool in <strong>computer vision and
+                      robotics</strong>. The implementation follows an iterative approach with inlier classification and
+                    adaptive sampling to optimize computation. Using <strong>Open3D</strong>, the results visualize
+                    fitted planes where inliers are marked in <strong>red</strong> and outliers in
+                    <strong>green</strong>, effectively identifying dominant planar structures in 3D space.
+                  </p>
+                </td>
+              </tr>
+
 
 
               <tr>
