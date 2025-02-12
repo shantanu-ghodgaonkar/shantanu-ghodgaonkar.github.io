@@ -1,0 +1,112 @@
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+\usepackage{lastpage}
+\usepackage{booktabs}
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands for formatting
+\newcommand{\resumeExp}[2]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#2}} \vspace{-1.2mm}
+    \end{tabular*}
+    \vspace{-7mm}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.5ex, noitemsep,labelsep=1.2mm,itemsep=1mm]\small}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%---- Resume Content Starts ----
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{Shantanu Nitin Ghodgaonkar}}
+\end{center}
+\vspace{-7.5mm}
+\begin{justify}
+    \href{https://shantanu-ghodgaonkar.github.io/}{shantanu-ghodgaonkar.github.io} | \href{https://www.linkedin.com/in/s-n-g/}{linkedin.com/in/s-n-g} | \href{mailto:shantanu.ghodgaonkar@gmail.com}{shantanu.ghodgaonkar@gmail.com} | +1 (929) 922-0614
+\end{justify}
+\vspace{-6.5mm}
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+\small{
+\begin{tabular*}{\textwidth}[t]{p{1\textwidth}}
+    \textbf{Automation \& Control:} PLC Ladder Logic, PID Control, LQR, Model Predictive Control, Industrial IoT \\
+    \textbf{Data Analytics:} SQL, Power BI, Statistical Analysis, Data Cleaning, Predictive Modeling \\
+    \textbf{Programming:} Python, C++, MATLAB, Simulink, JavaScript, XML \\
+    \textbf{Robotics:} ROS, Universal Robots, CoppeliaSim, Jetson Nano, Raspberry Pi, Arduino \\
+    \textbf{Software Tools:} Git, Jira, LabVIEW, Altium, Overleaf, Excel Macros, Tableau
+\end{tabular*}}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp{Automation Engineering Intern | Bosch Global Software Technologies}{Sep 2021 - Jul 2023}
+\resumeItemListStart
+\item[$\bullet$] Analyzed complex manufacturing and quality data to optimize system efficiency, improving data accuracy by 30\%.
+\item[$\bullet$] Utilized SQL and Power BI to clean, analyze, and visualize production quality data for process improvement.
+\item[$\bullet$] Designed predictive models using Python to detect inconsistencies in manufacturing processes.
+\item[$\bullet$] Developed PLC automation scripts to streamline quality control checks, reducing cycle time by 15\%.
+\resumeItemListEnd
+
+\resumeExp{Data Analytics Intern | FluxGen Sustainable Technologies}{Jul 2020 - Sep 2020}
+\resumeItemListStart
+\item[$\bullet$] Led analysis of sensor data streams from industrial plants, identifying cost-saving opportunities.
+\item[$\bullet$] Developed Power BI dashboards for real-time monitoring of environmental data trends.
+\item[$\bullet$] Improved SQL database efficiency by optimizing queries, reducing report generation time by 40\%.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeExp{New York University, Tandon School of Engineering}{M.S. in Mechatronics \& Robotics, Sep 2023 - May 2025}
+\resumeItemListStart
+\item[$\bullet$] Relevant Coursework: Data Analytics, Statistical Learning, Robotics, Quality Control Systems.
+\resumeItemListEnd
+\resumeExp{Visvesvaraya Technological University}{B.E. in Electronics \& Instrumentation, Aug 2017 - Aug 2021}
+\resumeItemListStart
+\item[$\bullet$] Relevant Coursework: Control Systems, Industrial Automation, Database Management.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
