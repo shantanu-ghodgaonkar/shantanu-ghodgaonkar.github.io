@@ -1,2 +1,2 @@
 # shantanu-ghodgaonkar.github.io
-My Personal Protfolio
+My Personal Portfolio
