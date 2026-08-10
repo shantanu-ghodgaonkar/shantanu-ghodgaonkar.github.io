@@ -1,0 +1,329 @@
+% !TEX root = /home/shantanu/Documents/Shanto/jobs/resume/resume_v8_0.tex`'
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+% \usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+\usepackage{lastpage}
+\usepackage{booktabs}
+
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[2]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#2}} \vspace{-1.2mm} %\\
+        %\hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace*{-7mm}
+}
+
+\newcommand{\resumeProject}[2]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#2}} \vspace{-1.2mm} %\\
+        %\hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-7mm}
+}
+
+\newcommand{\resumeEduOld}[5]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \textbf{#1} & \footnotesize{#3}\vspace{-0.0mm} \\
+        \hspace{-4.3mm} \small{#2} & \footnotesize{#4}\vspace{-0.0mm} \\ 
+        \multicolumn{2}{l}{ \hspace{-4.3mm} \footnotesize{#5}}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeEduNew}[2]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#2}\vspace{-0.5mm} 
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm, topsep=1mm, partopsep=1mm, parsep=1mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=1.5ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=1mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}}%\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Macro to create a dynamic table with specific column alignments without using the table environment
+% #1 = Number of columns
+% #2 = Table content
+\newcommand{\InlineAlignedTable}[2]{%
+    \centering
+    \begin{tabularx}{\textwidth}{@{} L *{\numexpr#1-2\relax}{C} R @{}}
+    #2
+    \end{tabularx}
+}
+
+% Define helper commands for full-cell links
+\newcommand{\FullCellLinkL}[2]{\href{#1}{\makebox[\linewidth][l]{#2}}}
+\newcommand{\FullCellLinkC}[2]{\href{#1}{\makebox[\linewidth][c]{#2}}}
+\newcommand{\FullCellLinkR}[2]{\href{#1}{\makebox[\linewidth][r]{#2}}}
+
+
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Shantanu Nitin Ghodgaonkar} % Your Name
+\newcommand{\phone}{+1 (929) 922-0614} % Your Phone Number
+\newcommand{\emaila}{shantanu.ghodgaonkar@gmail.com} %Email 1
+\newcommand{\github}{shantanu-ghodgaonkar} %Github
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-7.5mm}
+\begin{justify}
+    \href{https://shantanu-ghodgaonkar.github.io/}{shantanu-ghodgaonkar.github.io} | \href{https://www.linkedin.com/in/s-n-g/}{linkedin.com/in/s-n-g} | \href{mailto:\emaila}{\emaila} | \href{tel:+19299220614}{\phone}
+\end{justify}
+\vspace{-6.5mm}
+
+
+%-----------EDUCATION-----------------
+
+% \vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEduNew
+{New York University\textnormal{, Tandon School of Engineering}} 
+{M.Sc. Mechatronics, Robotics and Automation Engineering} 
+\resumeSubHeadingListEnd
+\vspace{-2.5mm}
+
+\resumeSubHeadingListStart
+\resumeEduNew
+{Visvesvaraya Technological University\textnormal{, Bangalore Institute of Technology}} 
+{B.E. Electronics and Instrumentation Engineering} 
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+
+
+%-----------EXPERIENCE-----------------
+% \vspace{-2.5mm}
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{Robotics Engineer\textnormal{ | BotCrew LLC | TX, USA}}
+{\textit{Jun 2025 – Present}}
+\resumeItemListStart
+\item[$\bullet$] Leading full-stack software development of a \textbf{7-DoF robotic arm} atop a \textbf{mobile robot}, targeting \textbf{Jetson Thor} deployment.
+\item[$\bullet$] Ported \textbf{Moteus X1 servo controller} firmware to drive custom \textbf{servo-hydraulic actuators}, extending it beyond stock control.
+\item[$\bullet$] Built \textbf{RAII}-based \textbf{CUDA} \textbf{unified memory} \textbf{API} for \textbf{zero-copy CPU-GPU} access on \textbf{DGX}, \textbf{Jetson}.
+\item[$\bullet$] Designed a \textbf{collision-aware inverse kinematics (IK)} solver with custom \textbf{CUDA kernels}, converging in \textbf{p95:80 ms}.
+\item[$\bullet$] Developed a joint-space \textbf{Model Predictive Controller (MPC)} running at \textbf{20 Hz} with position and velocity limits.
+\item[$\bullet$] Built a \textbf{PCD-to-ESDF} module using \textbf{nvblox} for \textbf{environment-aware motion planning} from 3D sensor data.
+\item[$\bullet$] Integrated \textbf{OMPL}'s \textbf{RRT-Connect} with custom \textbf{CUDA kernels} for environmental collision checks.
+\item[$\bullet$] Developed a \textbf{PIV cascaded controller} for \textbf{low-level joint actuation}, driving custom-designed \textbf{servo-hydraulic actuators}.
+\item[$\bullet$] Developed a \textbf{force-feedback Zero-G controller} using \textbf{F/T sensing} and \textbf{spring-damper admittance} at \textbf{1 kHz}, \textbf{7 DoF}.
+\item[$\bullet$] Generated \textbf{2K} frame synthetic dataset in \textbf{IsaacLab} with randomized solar panels, lights, pose, and terrain, on \textbf{DGX Spark}.
+\item[$\bullet$] Trained \textbf{RF-DETR-Seg Nano} for \textbf{solar panel instance segmentation} on \textbf{D555}: \textbf{0.512 mAP}, \textbf{0.939 IoU}, \textbf{p95:20.3 ms}.
+\item[$\bullet$] Exported trained model via \textbf{ONNX} and \textbf{TensorRT} for low-latency inference on \textbf{Jetson edge compute}.
+\item[$\bullet$] Built \textbf{RANSAC}+\textbf{PCA} pipeline on masked \textbf{depth data} to estimate solar panel \textbf{6-DoF pose}, \textbf{dimensions}, \textbf{mass}.
+\item[$\bullet$] Building a \textbf{digital twin} of the \textbf{robot and workcell scene} in \textbf{IsaacLab} for higher-fidelity simulation.
+\resumeItemListEnd
+
+\resumeExp
+{Adjunct Professor\textnormal{ | New York University | NY, USA}}
+{\textit{Jun 2024 – Jun 2025}}
+\resumeItemListStart
+\item[$\bullet$] Taught \textbf{control systems} using \textbf{C++, Python, MATLAB, and Simulink}, focusing on \textbf{PID, LQR, and MPC}.
+\item[$\bullet$] Instructed students on \textbf{Standard Operating Procedures} for lab equipment including \textbf{oscilloscopes and function generators}.
+\item[$\bullet$] Demonstrated the use of the \textbf{Allen Bradley PLC} to students, getting them ready for \textbf{real-world challenges}.
+\item[$\bullet$] Designed and troubleshot \textbf{motion planning} for a \textbf{mobile hexapod} using \textbf{ROS Humble} and real-world testing.
+\item[$\bullet$] Monitored and optimized \textbf{robotic performance} by debugging \textbf{simulation-to-hardware discrepancies} in \textbf{MuJoCo}.
+\item[$\bullet$] Utilized \textbf{Linux, Bash, and Git} for \textbf{version control, system integration, and testing} for the \textbf{hexapod}.
+\item[$\bullet$] Documented \textbf{control algorithms, system configurations, and troubleshooting steps} for improved \textbf{system reliability}.
+\item[$\bullet$] Guided students in \textbf{debugging robotics issues}, adapting explanations to different skill levels for better learning.
+\item[$\bullet$] Researching and testing applicable \textbf{Reinforcement Learning} strategies for \textbf{Vision-based Control} of the mobile hexapod.
+% \item[$\bullet$] Currently leading the implementation of \textbf{vision-based control algorithms} for the hexapod.
+% \item[$\bullet$] Passionate about \textbf{robotics and automation}, driving improvements in \textbf{hands-on learning} and \textbf{system deployment}.
+\resumeItemListEnd
+
+\resumeExp
+{Software Engineer\textnormal{ | Bosch Global Software Technologies | Bengaluru, India}}
+{\textit{Sep 2021 – Jul 2023}}
+\resumeItemListStart
+\item[$\bullet$] Built and maintained \textbf{diagnostic tools} for \textbf{ODX data processing}, ensuring seamless integration into \textbf{automotive systems}.
+\item[$\bullet$] Identified and resolved \textbf{software issues} in \textbf{diagnostic tools}, enhancing performance and reducing \textbf{debugging time} for \textbf{INEOS}.
+\item[$\bullet$] Documented \textbf{system errors} and submitted \textbf{Jira tickets} for issues requiring \textbf{senior engineering team support}.
+\item[$\bullet$] \textbf{Collaborated} with engineering teams to improve \textbf{software stability}, cutting \textbf{development time} by \textbf{70\%} with \textbf{automation}.
+\item[$\bullet$] Developed \textbf{Python scripts} to \textbf{automate repetitive tasks}, significantly improving \textbf{personal efficiency} by \textbf{40\%}.
+\item[$\bullet$] Used \textbf{Git} and \textbf{Subversion} for \textbf{version control} and set up a \textbf{Jenkins CI/CD pipeline} for \textbf{automated deployment}.
+\item[$\bullet$] Updated \textbf{documentation} on \textbf{sys-op, troubleshooting, and deployment process}, ensuring \textbf{clear knowledge transfer}.
+\item[$\bullet$] Trained \textbf{client technicians} and \textbf{internal teams} on \textbf{new software workflows}, improving \textbf{operational efficiency}.
+\item[$\bullet$] Conducted \textbf{on-site debugging} and \textbf{system validation}, \textbf{deploying} and \textbf{integrating tools} for \textbf{various clients}.
+\item[$\bullet$] Worked in \textbf{Agile sprints} using \textbf{Jira}, maintaining a \textbf{90\% on-time delivery rate} while managing \textbf{multiple automotive projects}.
+\item[$\bullet$] Took on additional responsibilities, including \textbf{client-facing roles}, \textbf{training new joiners}, and \textbf{conducting interviews}.
+\item[$\bullet$] Earned \textbf{recognition and rewards} from \textbf{management} for contributions in improving \textbf{team performance} and \textbf{client satisfaction}.
+\resumeItemListEnd
+
+
+
+
+% \resumeExp
+% {Diagnostic Content Engineering Intern\textnormal{ | Bosch Global Software Technologies | Bengaluru, India}}
+% {\textit{Mar 2021 - Jun 2021}}
+% \resumeItemListStart
+% \item[$\bullet$] Developed \textbf{OTX screens} for \textbf{ECU simulation} using \textbf{HTML, CSS, and JavaScript} to support \textbf{diagnostic workflows}.
+% \item[$\bullet$] Integrated and validated \textbf{OTX screens} for \textbf{vehicle testing} in \textbf{diagnostic systems}.
+% \item[$\bullet$] Collaborated with \textbf{cross-functional teams} to improve \textbf{ECU simulation accuracy} and streamline \textbf{workflows}.
+% \item[$\bullet$] Trained in \textbf{AUTOSAR, UDS and CAN} protocols and obtained \textbf{Road vehicles – Functional safety (ISO 26262)} certification.
+% \resumeItemListEnd
+
+
+% \resumeExp
+% {Summer Engineering Intern\textnormal{ | FluxGen Sustainable Technologies | Bengaluru, India}}
+% {\textit{Jul 2020 – Sep 2020}}
+% \resumeItemListStart
+% \item[$\bullet$] Developed a \textbf{wireless temperature and humidity monitoring system} using the \textbf{ESP32 Wi-Fi \& Bluetooth module}.
+% \item[$\bullet$] Created an \textbf{Android app} to display \textbf{sensor data} in \textbf{real-time}, improving \textbf{monitoring accessibility}.
+% \item[$\bullet$] Developed an \textbf{ad hoc wireless system} connecting \textbf{patients and doctors}, improving care during the \textbf{COVID-19 pandemic}.
+% \item[$\bullet$] Designed \textbf{wearable devices} with \textbf{ESP32} $\mu$C and \textbf{LoRaWAN (RFM95)} for \textbf{wireless communication}.
+% \item[$\bullet$] Integrated \textbf{sensors (MCP9808, MAX30102)} to track \textbf{body temperature, heart rate, and SpO2 levels} in \textbf{real-time}.
+% \item[$\bullet$] Implemented a \textbf{meshed network} using the \textbf{ClusterDuck Protocol} for \textbf{real-time data collection} between \textbf{wearable devices}.
+% \item[$\bullet$] Developed a \textbf{web-based user interface} using \textbf{HTML and JavaScript}, for \textbf{monitoring data} from \textbf{wearable devices}.
+% \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+
+
+% %-----------Projects-----------------
+
+% % \vspace{-2.5mm}
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \resumeExp
+% {Obstacle-Aware Control of 2D Quadrotor using PPO in Custom Reinforcement Learning Environment | \href{https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Reinforcement Learning and Optimal Control for Robotics (ROB-GY 6323)/Project 2/project2.ipynb}{\underline{GitHub}}}{Dec 2024} \\
+% \resumeExp
+% {Deep Q-Learning to solve Linear Inverted Pendulum problem using PyTorch | \href{https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Reinforcement Learning and Optimal Control for Robotics (ROB-GY 6323)/Homework/Series 4/Series 4 - Q-learning.ipynb}{\underline{GitHub}}}{Nov 2024} \\
+% \resumeExp
+% {Comparison between Value and Policy Iteration over Grid World | \href{https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/blob/main/Reinforcement Learning and Optimal Control for Robotics (ROB-GY 6323)/Homework/Series 3/Exercise2.ipynb}{\underline{GitHub}}}{Oct 2024} \\
+% \resumeExp
+% {Trajectory Optimization and MPC for a 2D Quadrotor | \href{https://github.com/shantanu-ghodgaonkar/NYUMSMRFALL24/tree/main/Reinforcement Learning and Optimal Control for Robotics (ROB-GY 6323)/Project 1/Shantanu_Ghodgaonkar_ROBGY6323_Project1_Report.pdf}{\underline{GitHub}}}{Sep 2024} \\
+% \resumeExp
+% {Hexapod Robot Development | \href{https://github.com/shantanu-ghodgaonkar/hexapod}{\underline{GitHub}}}{Sep 2024 – Present} \\
+% \resumeExp
+% {Maze Solving Robot using Raspberry Pi and Arduino | \href{https://github.com/shantanu-ghodgaonkar/rPiUnoMazeSolver}{\underline{GitHub}}}{May 2024} \\
+% \resumeExp
+% {Vision and IMU Fusion with Unscented Kalman Filter | \href{https://github.com/shantanu-ghodgaonkar/Proj3-ROBGY6213}{\underline{GitHub}}}{April 2024} \\
+% \resumeSubHeadingListEnd
+
+
+% \vspace{-3.5mm}
+
+
+%-----------SKILLS-----------------
+\vspace{-4.5mm}
+\section{Technical Skills}
+% \vspace{0.2mm}
+
+% \small{\begin{tabular*}{\textwidth}[t]{p{1\textwidth}}% p{0.5\textwidth}}
+% % Robotics fundamentals, including geometry, linear algebra, multivariate calculus, kinematics, dynamics, probability, and statistics 
+%     \hspace{-3.1mm}{\textbf{ Control Systems:} PID Control, LQR Control, Model Predictive Control, Numerical Optimization, PLC Ladder Logic} \vspace{1mm}\\
+%     % \hspace{-3.1mm}{\textbf{ Robotics Fundamentals:} 3D and Epipolar Geometry, Linear Algebra, Kinematics, Dynamics, Probability, Statistics} \vspace{1mm}\\ 
+%     \hspace{-3.1mm}{\textbf{ Robotics Platforms:} Universal Robotics UR16, MuJoCo, Gazebo, CoppeliaSim, Nvidia Jetson, Raspberry Pi, Arduino, ESP32} \vspace{1mm}\\ 
+%     \hspace{-3.1mm}{\textbf{ Programming Languages:} Python, C++, C, Java, HTML, CSS, JavaScript, XML, SQL, Linux Bash} \vspace{1mm}\\ 
+%     \hspace{-3.1mm}{\textbf{ Frameworks \& Libraries:} PyTorch, ROS Humble, OpenCV, SciPy, Pinocchio, Simulink, MATLAB Robotics Toolbox} \vspace{1mm}\\ 
+%     \hspace{-3.1mm}{\textbf{ Communication Protocols:} UART, USB, I2C, SPI, ClusterDuck Protocol, Dynamixel Protocol 2.0, BLE, WiFi, MQTT, CAN} \vspace{1mm}\\ 
+%     \hspace{-3.1mm}{\textbf{ Tools \& Others:} Git, Subversion, Docker, Jira, LabVIEW, LPKF CircuitPro, Altium, Eagle, KiCad, Overleaf} \vspace{1mm}
+% \end{tabular*}}
+
+
+
+% \section{Technical Skills}
+\small{\begin{tabular*}{\textwidth}[t]{p{1\textwidth}}
+    \hspace{-3.1mm}{\textbf{ Control Systems:} PID, LQR, PIV, Numerical Optimization (ProxQP, OSQP), Model Predictive Control} \vspace{1mm}\\
+    \hspace{-3.1mm}{\textbf{ Robotics \& Simulation:} Pinocchio, OMPL, nvblox, CoppeliaSim, MuJoCo, ROS2, FastDDS, IsaacLab} \vspace{1mm}\\
+    \hspace{-3.1mm}{\textbf{ Perception \& CV Models:} YOLO26, RF-DETR, YOLACT-Edge, Instance Segmentation, Intel RealSense D555} \vspace{1mm}\\
+    \hspace{-3.1mm}{\textbf{ Embedded Hardware:} Nvidia Jetson, Raspberry Pi, Arduino, ESP32, STM32 (Moteus X1)} \vspace{1mm}\\
+    \hspace{-3.1mm}{\textbf{ Programming \& Libraries:} C++, Python, C, Embedded C, CUDA, PyTorch, OpenCV, SciPy, MATLAB/Simulink} \vspace{1mm}\\
+    \hspace{-3.1mm}{\textbf{ Communication Protocols:} CAN, CAN-FD, UART, USB, I2C, SPI, BLE, WiFi, MQTT, Dynamixel Protocol 2.0, RTPS} \vspace{1mm}\\
+    \hspace{-3.1mm}{\textbf{ Dev \& Test Tools:} Git, Subversion, Docker, CMake, Linux Bash, Jira, LabVIEW, LPKF CircuitPro, Overleaf} \vspace{1mm}\\
+    \hspace{-3.1mm}{\textbf{ Certifications:} \href{https://www.credly.com/badges/258a5ac5-9551-4cef-a26b-0a80f7c555cd/public_url}{PMI Certified Associate in Project Management (CAPM)}} \vspace{1mm}
+\end{tabular*}}
+
+
+
+
+\end{document}
